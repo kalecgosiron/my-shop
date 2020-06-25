@@ -11,7 +11,7 @@ import javax.swing.*;
 /**
  * @author hp-pc
  */
-@Service(value = "userService")
+@Service
 public class UserServiceImpl implements UserService {
 
     private UserDao userDao = SpringContext.getBean("userDao");
