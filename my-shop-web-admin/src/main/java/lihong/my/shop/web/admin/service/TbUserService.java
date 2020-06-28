@@ -1,5 +1,6 @@
 package lihong.my.shop.web.admin.service;
 
+import lihong.my.shop.commons.dto.BaseResult;
 import lihong.my.shop.domain.TbUser;
 
 import java.util.List;
@@ -7,7 +8,7 @@ import java.util.List;
 public interface TbUserService {
     public List<TbUser> selectAll();
 
-    void insert(TbUser tbUser);
+    BaseResult save(TbUser tbUser);
 
     void delete(Long id);
 
